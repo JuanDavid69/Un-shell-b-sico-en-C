@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-//#include <stdio.h
+#include <stdio.h>
 
 char** obtenerPalabras(char entrada[]) {
   char ** entradaProcesada;
@@ -66,13 +66,13 @@ char** obtenerPalabras(char entrada[]) {
 }
 //main para PRUEBA
 //
-// int main(int argc, char const *argv[]) {
-//   char entrada1[] = " a  -com --a";
-//   char ** entradaProcesada1;
-//
-//   entradaProcesada1 = obtenerPalabras(entrada1);
-//   for (int i = 0; i < 3; i++) {
-//     printf("%s\n", entradaProcesada1[i]);
-//   }
-//   return 0;
-// }
+ int main(int argc, char const *argv[]) {
+   char entrada1[] = " a  -com --a";
+   char ** entradaProcesada1;
+
+   entradaProcesada1 = obtenerPalabras(entrada1);
+   for (int i = 0; i < 3; i++) {
+     printf("%s\n", entradaProcesada1[i]);
+   }
+   return 0;
+ }
