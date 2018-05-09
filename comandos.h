@@ -1,0 +1,1 @@
+int comandoArgs (char ** comando);
