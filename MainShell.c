@@ -11,14 +11,15 @@ int main(int argc, char const *argv[])
 	while(1) {
 		char entrada[80];
 		char ** comando;
+		int size;
 		printf("#-> ");
 		scanf("%[^\n]%*c", entrada);
-		comando = obtenerPalabras(entrada);
+		comando = obtenerPalabras(entrada, &size);
 
 		if(!strcmp("exit", comando[0])) {
 			break;
 		}
-		if (comandoArgs(comando) == 1){
+		if (comandoArgs(comando, size) == 1){
 			break;
 		}
 	}
