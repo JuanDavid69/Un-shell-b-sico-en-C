@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 
-char** obtenerPalabras(char entrada[]) {
+char** obtenerPalabras(char entrada[], int *sizeOut) {
   char ** entradaProcesada;
 
   int numPalabras = 0;
@@ -32,7 +32,7 @@ char** obtenerPalabras(char entrada[]) {
 
   //Preparamos el arreglo para la entradaProcesada
   entradaProcesada = malloc(sizeof *entradaProcesada * numPalabras);
-
+  *sizeOut = numPalabras;
   char buff[50] = "-";
 
   //Procesamos la entrada
