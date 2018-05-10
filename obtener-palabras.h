@@ -1,1 +1,1 @@
-char** obtenerPalabras(char entrada[]);
+char** obtenerPalabras(char entrada[], int *sizeOut);
