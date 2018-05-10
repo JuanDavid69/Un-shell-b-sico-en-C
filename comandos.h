@@ -1,1 +1,1 @@
-int comandoArgs (char ** comando);
+int comandoArgs (char ** comando, int size);
